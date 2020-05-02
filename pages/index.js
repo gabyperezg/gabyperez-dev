@@ -3,6 +3,7 @@ import Nav from '../components/nav'
 import TypedHeader from '../components/TypedHeader'
 import Intro from '../components/Intro'
 import Skills from '../components/Skills'
+import WorkHistory from '../components/WorkHistory'
 
 const Index = () => (
   <div>
@@ -14,6 +15,7 @@ const Index = () => (
     <TypedHeader message="Hello World!      " />
     <Intro />
     <Skills />
+    <WorkHistory />
   </div>
 )
 
