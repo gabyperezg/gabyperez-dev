@@ -14,6 +14,9 @@ const SkillImg = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(${(props) => props.img});
+  @media (max-width: 800px) {
+    min-height: 50vh;
+  }
 `
 
 const SkillsContainer = styled.div`
@@ -29,6 +32,11 @@ const Skill = styled.img`
   transition: all 0.4s ease-in-out;
   &:hover {
     transform: scale(3);
+  }
+  @media (max-width: 800px) {
+    width: 90px;
+    height: 90px;
+    margin: 15px;
   }
 `
 const Credit = styled.p`
@@ -81,7 +89,7 @@ const Intro = () => {
             ></Skill>
           </SkillsContainer>
         </SkillImg>
-        <Credit>Photo by Jessy Smith on Unsplash</Credit>
+        <Credit>Photo by Rich Tervet on Unsplash</Credit>
       </div>
     </div>
   )

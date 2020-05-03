@@ -7,10 +7,7 @@ const Experience = styled.div`
   font-size: 80px;
   text-align: center;
 `
-const PrixzLogo = styled.img`
-  padding: 10px;
-  object-fit: content;
-`
+
 const Timeline = styled.div`
   padding-top: 40px;
   height: 130vh;
@@ -28,9 +25,10 @@ const Timeline = styled.div`
     left: 50%;
     margin-left: -3px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
+    height: 140vh;
     &:after {
-      left: 31px;
+      left: 90%;
     }
   }
 `
@@ -53,12 +51,13 @@ const Container = styled.div`
     border-radius: 50%;
     z-index: 1;
   }
-  @media screen and (max-width: 600px) {
-    width: 100%;
-    padding-left: 70px;
+  @media screen and (max-width: 800px) {
+    width: 80%;
+    padding-left: 104px;
     padding-right: 25px;
+
     &:before {
-      left: 60px;
+      left: 94%;
       border: medium solid white;
       border-width: 10px 10px 10px 0;
       border-color: transparent white transparent transparent;
@@ -78,7 +77,7 @@ const LeftContainer = styled(Container)`
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent #a299a840;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 800px) {
       &:after {
         left: 15px;
       }
@@ -102,10 +101,16 @@ const RightContainer = styled(Container)`
   &:after {
     left: -16px;
   }
-  @media screen and (max-width: 600px) {
-    left: 0%;
+  @media screen and (max-width: 800px) {
+    left: -16%;
     &:after {
-      left: 15px;
+      left: 96%;
+    }
+    &:before {
+      left: 94%;
+      border: medium solid white;
+      border-width: 10px 10px 10px 10px;
+      border-color: transparent white transparent #a299a840;
     }
   }
 `
@@ -115,6 +120,9 @@ const Content = styled.div`
   background-color: #a299a840;
   position: relative;
   border-radius: 6px;
+  @media screen and (max-width: 800px) {
+    margin-right: 6px;
+  }
 `
 
 const ContentText = styled.p`
