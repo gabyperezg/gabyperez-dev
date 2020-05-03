@@ -8,7 +8,7 @@ const MySkills = styled.div`
   text-align: center;
 `
 const SkillImg = styled.div`
-  min-height: 50vh;
+  min-height: 90vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,15 +18,13 @@ const SkillImg = styled.div`
 
 const SkillsContainer = styled.div`
   margin: auto;
-  margin-top: 60px;
   padding-top: 50px;
-  height: 330px;
-  width: 570px;
+  width: 70%;
 `
 
 const Skill = styled.img`
-  width: 70px;
-  height: 70px;
+  width: 120px;
+  height: 120px;
   margin: 30px;
   transition: all 0.4s ease-in-out;
   &:hover {
@@ -36,18 +34,20 @@ const Skill = styled.img`
 const Credit = styled.p`
   font-size: 15px;
   color: white;
+  margin-left: 0;
+  color: grey;
 `
 
 const Intro = () => {
   return (
     <div>
       <div>
-        <SkillImg img="/jessy-smith-zFOm6KzA-7g-unsplash.jpg">
+        <SkillImg img="/rich-tervet-unsplash.jpg">
           <MySkills>My Skills</MySkills>
           <SkillsContainer>
             <Skill
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1116997/javascript.svg"
-              alt="JS Logo"
+              src="https://nodejs.org/static/images/logo.svg"
+              alt="nodejs Logo"
             ></Skill>
             <Skill src="https://graphql.org/img/logo.svg" alt="JS Logo"></Skill>
             <Skill
@@ -55,16 +55,21 @@ const Intro = () => {
               alt="React Logo"
             ></Skill>
             <Skill
-              src="https://nodejs.org/static/images/logo.svg"
-              alt="nodejs Logo"
-            ></Skill>
-            <Skill
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1116997/git.png"
               alt="git Logo"
             ></Skill>
             <Skill
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1116997/javascript.svg"
+              alt="JS Logo"
+            ></Skill>
+
+            <Skill
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1116997/npm.svg"
               alt="npm Logo"
+            ></Skill>
+            <Skill
+              src="http://www.manualweb.net/img/logos/mongodb.png"
+              alt="mongo DB Logo"
             ></Skill>
             <Skill
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1116997/github-octocat.svg"
@@ -75,8 +80,8 @@ const Intro = () => {
               alt="Github Logo"
             ></Skill>
           </SkillsContainer>
-          <Credit>Photo by Jessy Smith on Unsplash</Credit>
         </SkillImg>
+        <Credit>Photo by Jessy Smith on Unsplash</Credit>
       </div>
     </div>
   )

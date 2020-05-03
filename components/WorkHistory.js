@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import LanguageContext from '../components/Contexts/Language'
 import styled from 'styled-components'
 
 const Experience = styled.div`
@@ -12,7 +13,7 @@ const PrixzLogo = styled.img`
 `
 const Timeline = styled.div`
   padding-top: 40px;
-  height: 120vh;
+  height: 130vh;
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
@@ -142,9 +143,12 @@ const PreparedText = styled.p`
   font-family: Open Sans, sans-serif;
 `
 const WorkHistory = () => {
+  const { language } = useContext(LanguageContext)
+  const title = language === 'ENG' ? 'Experience' : 'Experiencia Laboral'
+  const linkText = language === 'ENG' ? 'See Project' : 'Ver Proyecto'
   return (
     <>
-      <Experience>Work history</Experience>
+      <Experience>{title}</Experience>
       <Timeline>
         <LeftContainer>
           <Content>
@@ -154,12 +158,13 @@ const WorkHistory = () => {
               <PreparedText> THE PREPARED</PreparedText>
             </ContainerLogoPrepared>
             <ContentText>
-              Working with React embedded in a Wordpress site. Created a CMS in
-              React for kits data analysis. Created the kit builder app in React
-              following the UI/UX style guidelines.
+              {language === 'ESP' &&
+                'Trabajando en React dentro de un sitio en Wordpress. Desarrolle un CMS en React para el análisis de datos de kits. Desarrolle una aplicación para crear y editar kits en React siguiendo los diseños de UI/UX.'}
+              {language === 'ENG' &&
+                'Working with React embedded in a Wordpress site. Created a CMS in React for kits data analysis. Created the kit builder app in React following the UI/UX style guidelines.'}
             </ContentText>
             <a href="https://theprepared.com/" target="_blank">
-              See project
+              {linkText}
             </a>
           </Content>
         </LeftContainer>
@@ -168,13 +173,13 @@ const WorkHistory = () => {
             <h2>Front End Developer @ </h2>
             <LogoStylindex src="/stylindexLogo.svg" />
             <ContentText>
-              Worked with React and Apollo to create new features within the
-              site and CMS. Created toast notifications. Added a scrollable
-              feature to media content. Improved visual design for artis notes
-              module.
+              {language === 'ESP' &&
+                'Trabaje con React y Apollo para crear nuevas funcionalidades dentro del sitio y el CMS. Genere un sistema de notificaciones para el cliente. Añadí una funcionalidad de scroll para el contenido visual. Mejoré el diseño visual de la secion de notas.'}
+              {language === 'ENG' &&
+                'Worked with React and Apollo to create new features within the site and CMS. Created toast notifications. Added a scrollable feature to media content. Improved visual design for artis notes module.'}
             </ContentText>
             <a href="https://stylindex.com/" target="_blank">
-              See project
+              {linkText}
             </a>
           </Content>
         </RightContainer>
@@ -183,13 +188,13 @@ const WorkHistory = () => {
             <h2>Fullstack Developer @ </h2>
             <LogoPrixz src="/logoPrixz.png" />
             <ContentText>
-              Worked with technologies like Vue, node, hapi, React and Apollo to
-              support an e-commerce for pharmaceutical products. Created an API
-              for a delivery service between branch offices. Debugged and
-              stabilizeed the invoice module front to back.
+              {language === 'ESP' &&
+                'Trabaje con tecnologias como Vue, Node, Express,Hapi, React y Apollo dentro de un e-commerce de productos farmaceuticos. Desarrollé una API en Express para un sistema de envios entre sucursales. Eliminé bugs y estabilicé el modulo de facturación desde el front hasta el back end.'}
+              {language === 'ENG' &&
+                'Worked with technologies like Vue, Node, Express,Hapi, React and Apollo to support an e-commerce for pharmaceutical products. Created an API for a delivery service between branch offices. Debugged and stabilizeed the invoice module front to back.'}
             </ContentText>
             <a href="http://old.prixz.com/" target="_blank">
-              See project
+              {linkText}
             </a>
           </Content>
         </LeftContainer>

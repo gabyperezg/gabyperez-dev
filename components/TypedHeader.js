@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import styled from 'styled-components'
+import LanguageContext from './Contexts/Language'
 
 const Title = styled.div`
   color: #6c388f;
@@ -12,8 +13,10 @@ const H2 = styled.h2`
   margin-top: 0px;
 `
 const TypedMessage = (props) => {
-  const helloWorld = 'Hello World!      '
-  const myName = "I'm Gaby Perez"
+  const { language } = useContext(LanguageContext)
+
+  const helloWorld = language === 'ENG' ? 'Hello World!' : 'Hola Mundo!'
+  const myName = language === 'ENG' ? "I'm Gaby Perez" : 'Soy Gaby Perez'
   const [worldLength, setWorldLength] = useState(0)
   const [nameLength, setNameLength] = useState(0)
 
