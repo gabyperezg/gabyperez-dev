@@ -4,8 +4,13 @@ import styled from 'styled-components'
 const Title = styled.div`
   color: #6c388f;
 `
-
-const TypedMessage = props => {
+const H1 = styled.h1`
+  margin-bottom: 0;
+`
+const H2 = styled.h2`
+  margin-top: 0px;
+`
+const TypedMessage = (props) => {
   const helloWorld = 'Hello World!      '
   const myName = "I'm Gaby Perez"
   const [worldLength, setWorldLength] = useState(0)
@@ -34,8 +39,8 @@ const TypedMessage = props => {
 
   return (
     <Title>
-      <h1>🌎{typeHelloWorld}</h1>
-      <h2>{typeMyName}</h2>
+      <H1>🌎{typeHelloWorld}</H1>
+      <H2>{typeMyName}</H2>
     </Title>
   )
 }
