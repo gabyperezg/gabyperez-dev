@@ -3,18 +3,17 @@ import styled from 'styled-components'
 import keyframes from 'styled-components'
 import skillImg from '../pages/'
 
-const MySkills = styled.p`
-  padding-top: 80px;
+const MySkills = styled.div`
   font-size: 80px;
   text-align: center;
 `
 const SkillImg = styled.div`
-  height: 100vh;
+  min-height: 50vh;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(${props => props.img});
-  object-fit: cover;
+  background-image: url(${(props) => props.img});
 `
 
 const SkillsContainer = styled.div`
@@ -41,8 +40,8 @@ const Credit = styled.p`
 
 const Intro = () => {
   return (
-    <div className="row">
-      <div className="col-md-12">
+    <div>
+      <div>
         <SkillImg img="/jessy-smith-zFOm6KzA-7g-unsplash.jpg">
           <MySkills>My Skills</MySkills>
           <SkillsContainer>

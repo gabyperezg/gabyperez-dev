@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 const Title = styled.div`
   color: #6c388f;
+  margin-top: -30px;
 `
 const H1 = styled.h1`
   margin-bottom: 0;
