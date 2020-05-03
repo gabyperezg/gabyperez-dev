@@ -12,10 +12,11 @@ const PrixzLogo = styled.img`
 `
 const Timeline = styled.div`
   padding-top: 40px;
-  height: 100vh;
+  height: 120vh;
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 30px;
   &:after {
     content: '';
     position: absolute;
@@ -114,8 +115,12 @@ const Content = styled.div`
   position: relative;
   border-radius: 6px;
 `
+
+const ContentText = styled.p`
+  font-size: 18px;
+`
 const LogoPrixz = styled.img`
-  height: 30px;
+  height: 40px;
 `
 const LogoStylindex = styled.img`
   height: 30px;
@@ -148,11 +153,11 @@ const WorkHistory = () => {
               <LogoPrepared src="/preparedLogo.png" />
               <PreparedText> THE PREPARED</PreparedText>
             </ContainerLogoPrepared>
-            <p>
+            <ContentText>
               Working with React embedded in a Wordpress site. Created a CMS in
               React for kits data analysis. Created the kit builder app in React
               following the UI/UX style guidelines.
-            </p>
+            </ContentText>
             <a href="https://theprepared.com/" target="_blank">
               See project
             </a>
@@ -162,12 +167,12 @@ const WorkHistory = () => {
           <Content>
             <h2>Front End Developer @ </h2>
             <LogoStylindex src="/stylindexLogo.svg" />
-            <p>
+            <ContentText>
               Worked with React and Apollo to create new features within the
               site and CMS. Created toast notifications. Added a scrollable
               feature to media content. Improved visual design for artis notes
               module.
-            </p>
+            </ContentText>
             <a href="https://stylindex.com/" target="_blank">
               See project
             </a>
@@ -177,12 +182,12 @@ const WorkHistory = () => {
           <Content>
             <h2>Fullstack Developer @ </h2>
             <LogoPrixz src="/logoPrixz.png" />
-            <p>
+            <ContentText>
               Worked with technologies like Vue, node, hapi, React and Apollo to
               support an e-commerce for pharmaceutical products. Created an API
               for a delivery service between branch offices. Debugged and
               stabilizeed the invoice module front to back.
-            </p>
+            </ContentText>
             <a href="http://old.prixz.com/" target="_blank">
               See project
             </a>

@@ -4,6 +4,7 @@ import TypedHeader from '../components/TypedHeader'
 import Intro from '../components/Intro'
 import Skills from '../components/Skills'
 import WorkHistory from '../components/WorkHistory'
+import Footer from '../components/Footer'
 
 const Index = () => (
   <div>
@@ -16,6 +17,7 @@ const Index = () => (
     <Intro />
     <Skills />
     <WorkHistory />
+    <Footer />
   </div>
 )
 

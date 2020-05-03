@@ -5,6 +5,8 @@ const Bio = styled.p`
   color: #8b719c;
   margin: 0;
   padding: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
   font-size: 26px;
 `
