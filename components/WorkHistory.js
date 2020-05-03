@@ -159,7 +159,7 @@ const WorkHistory = () => {
             </ContainerLogoPrepared>
             <ContentText>
               {language === 'ESP' &&
-                'Trabajando en React dentro de un sitio en Wordpress. Desarrolle un CMS en React para el análisis de datos de kits. Desarrolle una aplicación para crear y editar kits en React siguiendo los diseños de UI/UX.'}
+                'Actualment trabajando con React dentro de un sitio en Wordpress. Desarrolle un CMS en React para el análisis de datos de kits. Desarrolle una aplicación para crear y editar kits en React siguiendo los diseños de UI/UX.'}
               {language === 'ENG' &&
                 'Working with React embedded in a Wordpress site. Created a CMS in React for kits data analysis. Created the kit builder app in React following the UI/UX style guidelines.'}
             </ContentText>
