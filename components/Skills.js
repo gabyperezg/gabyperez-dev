@@ -16,6 +16,8 @@ const SkillImg = styled.div`
   background-image: url(${(props) => props.img});
   @media (max-width: 800px) {
     min-height: 50vh;
+    background-position: inherit;
+    background-attachment: unset;
   }
 `
 

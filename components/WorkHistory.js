@@ -6,11 +6,16 @@ const Experience = styled.div`
   padding-top: 30px;
   font-size: 80px;
   text-align: center;
+  width: 90%;
+  margin: auto;
+  @media screen and (max-width: 800px) {
+    font-size: 60px;
+  }
 `
 
 const Timeline = styled.div`
   padding-top: 40px;
-  height: 130vh;
+  height: auto;
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
@@ -26,7 +31,7 @@ const Timeline = styled.div`
     margin-left: -3px;
   }
   @media screen and (max-width: 800px) {
-    height: 140vh;
+    height: auto;
     &:after {
       left: 90%;
     }
@@ -53,7 +58,7 @@ const Container = styled.div`
   }
   @media screen and (max-width: 800px) {
     width: 80%;
-    padding-left: 104px;
+    padding-left: 95px;
     padding-right: 25px;
 
     &:before {
@@ -78,6 +83,7 @@ const LeftContainer = styled(Container)`
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent #a299a840;
     @media screen and (max-width: 800px) {
+      left: -20%;
       &:after {
         left: 15px;
       }
@@ -102,15 +108,14 @@ const RightContainer = styled(Container)`
     left: -16px;
   }
   @media screen and (max-width: 800px) {
-    left: -16%;
+    left: -20%;
     &:after {
-      left: 96%;
+      left: 94%;
     }
     &:before {
-      left: 94%;
+      left: 90%;
       border: medium solid white;
-      border-width: 10px 10px 10px 10px;
-      border-color: transparent white transparent #a299a840;
+      border-width: 0;
     }
   }
 `
@@ -133,15 +138,24 @@ const LogoPrixz = styled.img`
 `
 const LogoStylindex = styled.img`
   height: 30px;
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
 `
 const LogoPrepared = styled.img`
   height: 50px;
+  @media screen and (max-width: 800px) {
+    height: 40px;
+  }
 `
 const ContainerLogoPrepared = styled.div`
   display: flex;
   justify-content: center;
   height: 40px;
   color: black;
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
 `
 const PreparedText = styled.p`
   color: #475568;
@@ -149,6 +163,9 @@ const PreparedText = styled.p`
   margin-left: 5px;
   margin-top: 10px;
   font-family: Open Sans, sans-serif;
+  @media screen and (max-width: 800px) {
+    font-size: 20px;
+  }
 `
 const WorkHistory = () => {
   const { language } = useContext(LanguageContext)

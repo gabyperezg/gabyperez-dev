@@ -22,6 +22,7 @@ const Parallax = styled.div`
   background-size: cover;
   @media (max-width: 800px) {
     background-position: inherit;
+    background-attachment: unset;
   }
 `
 const ReactIcon = styled.img`
