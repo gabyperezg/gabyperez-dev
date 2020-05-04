@@ -18,6 +18,8 @@ const SkillImg = styled.div`
     min-height: 50vh;
     background-position: inherit;
     background-attachment: unset;
+    margin-left: -100px;
+    padding-left: 100px;
   }
 `
 

@@ -110,7 +110,7 @@ const RightContainer = styled(Container)`
   @media screen and (max-width: 800px) {
     left: -20%;
     &:after {
-      left: 94%;
+      left: 97%;
     }
     &:before {
       left: 90%;
