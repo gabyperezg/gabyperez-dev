@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
 import keyframes from 'styled-components'
 import skillImg from '../pages/'
+import LanguageContext from './Contexts/Language'
 
 const MySkills = styled.div`
   font-size: 80px;
@@ -51,11 +52,15 @@ const Credit = styled.p`
 `
 
 const Intro = () => {
+  const { language } = useContext(LanguageContext)
+
+  const titleText = language === 'ENG' ? 'My Skills' : 'Habilidades'
+
   return (
     <div>
       <div>
         <SkillImg img="/rich-tervet-unsplash.jpg">
-          <MySkills>My Skills</MySkills>
+          <MySkills>{titleText}</MySkills>
           <SkillsContainer>
             <Skill
               src="https://nodejs.org/static/images/logo.svg"

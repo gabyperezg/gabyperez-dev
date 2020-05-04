@@ -10,11 +10,16 @@ const Main = styled.div`
   background-color: #2e012e;
   padding: 10px;
 `
+const TimeContainer = styled.div`
+  @media (max-width: 800px) {
+    width: 60%;
+  }
+`
 const Time = styled.span`
   font-size: 20px;
   font-weight: 600;
 `
-
+const Copyright = styled.div``
 const Footer = () => {
   const [time, setTime] = useState(moment().format('LTS'))
   const { language } = useContext(LanguageContext)
@@ -25,10 +30,10 @@ const Footer = () => {
 
   return (
     <Main>
-      <p>© Copyright gabyperez.dev</p>
-      <p>
+      <Copyright>© Copyright gabyperez.dev</Copyright>
+      <TimeContainer>
         {language === 'ENG' ? 'Local time:' : 'Hora Local:'} <Time>{time}</Time>
-      </p>
+      </TimeContainer>
     </Main>
   )
 }

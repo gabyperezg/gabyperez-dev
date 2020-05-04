@@ -184,7 +184,7 @@ const WorkHistory = () => {
             </ContainerLogoPrepared>
             <ContentText>
               {language === 'ESP' &&
-                'Actualment trabajando con React dentro de un sitio en Wordpress. Desarrolle un CMS en React para el análisis de datos de kits. Desarrolle una aplicación para crear y editar kits en React siguiendo los diseños de UI/UX.'}
+                'Actualment trabajando con React dentro de un sitio en Wordpress. Desarrollé un CMS en React para el análisis de datos de kits. Generé una aplicación para crear y editar kits en React siguiendo los diseños de UI/UX.'}
               {language === 'ENG' &&
                 'Working with React embedded in a Wordpress site. Created a CMS in React for kits data analysis. Created the kit builder app in React following the UI/UX style guidelines.'}
             </ContentText>
@@ -199,7 +199,7 @@ const WorkHistory = () => {
             <LogoStylindex src="/stylindexLogo.svg" />
             <ContentText>
               {language === 'ESP' &&
-                'Trabaje con React y Apollo para crear nuevas funcionalidades dentro del sitio y el CMS. Genere un sistema de notificaciones para el cliente. Añadí una funcionalidad de scroll para el contenido visual. Mejoré el diseño visual de la secion de notas.'}
+                'Trabajé con React y Apollo para crear nuevas funcionalidades dentro del sitio y el CMS. Generé un sistema de notificaciones para el cliente. Añadí una funcionalidad de scroll para el contenido visual. Mejoré el diseño visual de la sección de notas.'}
               {language === 'ENG' &&
                 'Worked with React and Apollo to create new features within the site and CMS. Created toast notifications. Added a scrollable feature to media content. Improved visual design for artis notes module.'}
             </ContentText>
@@ -214,7 +214,7 @@ const WorkHistory = () => {
             <LogoPrixz src="/logoPrixz.png" />
             <ContentText>
               {language === 'ESP' &&
-                'Trabaje con tecnologias como Vue, Node, Express,Hapi, React y Apollo dentro de un e-commerce de productos farmaceuticos. Desarrollé una API en Express para un sistema de envios entre sucursales. Eliminé bugs y estabilicé el modulo de facturación desde el front hasta el back end.'}
+                'Trabajé con tecnologías como Vue, Node, Express,Hapi, React y Apollo dentro de un e-commerce de productos farmacéuticos. Desarrollé una API en Express para un sistema de envíos entre sucursales. Eliminé bugs y estabilicé el módulo de facturación desde el front hasta el back end.'}
               {language === 'ENG' &&
                 'Worked with technologies like Vue, Node, Express,Hapi, React and Apollo to support an e-commerce for pharmaceutical products. Created an API for a delivery service between branch offices. Debugged and stabilizeed the invoice module front to back.'}
             </ContentText>
